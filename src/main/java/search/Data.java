@@ -33,8 +33,13 @@ public class Data {
     }
 
     public void loadDataFromFile(String[] args) {
-//        String fileName = "E:\\Projects\\Simple Search Engine (Java)1\\Simple Search Engine (Java)\\task\\src\\search\\text.txt";
-        String fileName = args[1];
+
+        String project = System.getProperty("user.dir");
+        String folder = "src/main/java/search/text.txt";
+        Path filePath = Paths.get(project, folder);
+
+        String fileName = filePath.toString();
+//        String fileName = args[1];
         Path path = Paths.get(fileName);
         try {
             List<String> allLines = Files.readAllLines(path, StandardCharsets.UTF_8);

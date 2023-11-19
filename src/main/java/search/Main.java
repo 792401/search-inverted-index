@@ -1,16 +1,6 @@
 package search;
 
 import search.client.Search;
-import search.searchstrategy.All;
-import search.searchstrategy.Any;
-import search.searchstrategy.None;
-import search.searchstrategy.SearchStrategy;
-
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class Main {
