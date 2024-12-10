@@ -1,2 +1,2 @@
 # search-inverted-index
-Basic inverted index implementation
+Basic in-memory inverted index implementation 
